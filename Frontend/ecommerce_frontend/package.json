@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "purgecss": "purgecss --config ./purgecss.config.js"
   },
   "private": true,
   "dependencies": {
@@ -23,7 +24,6 @@
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
-
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.6",
     "@angular/cli": "~14.2.6",
@@ -35,6 +35,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "purgecss": "^6.0.0",
     "typescript": "~4.7.2"
   }
 }
